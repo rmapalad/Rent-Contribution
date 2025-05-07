@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Contribution Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>25-Z Contribution Estimation Calculator</h1>
+        
+        <div class="bill-section">
+            <h2>Electric Bill Calculation</h2>
+            <form id="electricBillForm">
+                <div class="form-group">
+                    <label for="totalElectricBill">Total Electric Bill Amount:</label>
+                    <input type="number" id="totalElectricBill" required step="0.01">
+                </div>
+
+                <div class="form-group">
+                    <label for="absentDates">Select Absent Dates:</label>
+                    <input type="text" id="absentDates" class="date-picker" placeholder="Click to select dates">
+                </div>
+
+                <div class="selected-dates">
+                    <h3>Selected Absent Dates:</h3>
+                    <ul id="selectedDatesList"></ul>
+                </div>
+
+                <button type="submit">Calculate Electric Bill Share</button>
+            </form>
+        </div>
+
+        <div class="bill-section">
+            <h2>Fixed Bills</h2>
+            <div class="constant-bills">
+                <p>Internet Bill: ₱1,400.00 per month</p>
+                <p>Water Bill: ₱360.00 per month</p>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h2>Your Share</h2>
+            <div id="results">
+                <p>Electric Bill Share: <span id="electricShare">₱0.00</span></p>
+                <p>Internet Bill Share: <span id="internetShare">₱350.00</span></p>
+                <p>Water Bill Share: <span id="waterShare">₱90.00</span></p>
+                <p class="total">Total Share: <span id="totalShare">₱440.00</span></p>
+            </div>
+        </div>
+
+        <div class="breakdown-section">
+            <h2>Electric Bill Breakdown</h2>
+            <div id="breakdown">
+                <div class="breakdown-item">
+                    <p>Total Electric Bill:</p>
+                    <span id="totalBill">₱0.00</span>
+                </div>
+                <div class="breakdown-item">
+                    <p>Days in Current Month:</p>
+                    <span id="daysInMonth">0</span>
+                </div>
+                <div class="breakdown-item">
+                    <p>Daily Rate:</p>
+                    <span id="dailyRate">₱0.00</span>
+                </div>
+                <div class="breakdown-item">
+                    <p>Number of Days Absent:</p>
+                    <span id="daysAbsent">0</span>
+                </div>
+                <div class="breakdown-item">
+                    <p>Total Deduction for Absent Days:</p>
+                    <span id="totalDeduction">₱0.00</span>
+                </div>
+                <div class="breakdown-item">
+                    <p>Remaining Bill After Deduction:</p>
+                    <span id="remainingBill">₱0.00</span>
+                </div>
+                <div class="breakdown-item total">
+                    <p>Your Share (Remaining Bill ÷ 4):</p>
+                    <span id="breakdownShare">₱0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

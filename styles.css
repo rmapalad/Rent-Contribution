@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555;
+    margin: 15px 0 10px;
+    font-size: 16px;
+}
+
+.bill-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.date-picker {
+    background-color: white;
+    cursor: pointer;
+}
+
+.selected-dates {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#selectedDatesList {
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#selectedDatesList li {
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-date {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 18px;
+    width: auto;
+}
+
+.remove-date:hover {
+    color: #cc0000;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.constant-bills {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.constant-bills p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.results-section {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#results p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 20px !important;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #4CAF50;
+}
+
+/* Breakdown section styles */
+.breakdown-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#breakdown {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.breakdown-item:last-child {
+    border-bottom: none;
+}
+
+.breakdown-item p {
+    color: #555;
+    margin: 0;
+}
+
+.breakdown-item span {
+    font-weight: 500;
+    color: #333;
+}
+
+.breakdown-item.total {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #4CAF50;
+    font-weight: bold;
+}
+
+.breakdown-item.total p,
+.breakdown-item.total span {
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+/* Calendar customization */
+.flatpickr-calendar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flatpickr-day.selected {
+    background: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.flatpickr-day.selected:hover {
+    background: #45a049;
+    border-color: #45a049;
+} 
